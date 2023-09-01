@@ -1,0 +1,24 @@
+<h1 class="center">Liste des Pokémons</h1>
+
+<!-- <p *ngFor="let pokemon of pokemonList">{{pokemon.name}}</p> -->
+<div class="container">
+  <div class="row">
+    <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
+  
+        <div class="card horizontal">
+            <div  class="card-image">
+                 <img [src]="pokemon.picture" />
+            </div>
+         
+          <div  class="card-stacked">
+            <div class="card-content">
+              <p>{{ pokemon.name }}</p>
+              <p>{{ pokemon.created }}</p>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+</div>
